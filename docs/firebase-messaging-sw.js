@@ -33,11 +33,11 @@ const messaging = firebase.messaging();
 // - the user clicks on an app notification created by a service worker
 //   `messaging.onBackgroundMessage` handler.
 // messaging.onMessage(function (payload) {
-//     console.log('Message received. ', payload);
+//     cl('Message received. ', payload);
 // });
 
 messaging.onBackgroundMessage((payload) => {
-    console.log('[firebase-messaging-sw.js] Received background message ', payload);
+    cl('[firebase-messaging-sw.js] Received background message ', payload);
     // Customize notification here
     // const notificationTitle = 'Background Message Title';
     // const notificationOptions = {
